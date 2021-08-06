@@ -20,6 +20,15 @@
 	</head>
 
 	<body>
+    <ul class="message-r">
+        <div class="topMessage home">
+            <div class="menu-hd"><a href="javascript:void(0);" @click="goShop">返回商城首页</a></div>
+        </div>
+<!--        <div class="topMessage my-shangcheng">-->
+<!--            <div class="menu-hd MyShangcheng"><a href="javascript:void(0);" @click="goUserCenter">-->
+<!--                <i class="am-icon-user am-icon-fw"></i>个人中心</a></div>-->
+<!--        </div>-->
+    </ul>
 		<div id="addressList">
 			<div class="nav-table">
 				<div class="long-title"><span class="all-goods" style="font-weight: bold;">用户中心</span></div>
@@ -120,6 +129,16 @@
 					this.renderAddressList();
 				},
 				methods: {
+                    goShop() {
+                        // 判断用户是否登录
+                        var userIsLogin = this.userIsLogin;
+                        if (!userIsLogin) {
+                            // 用户未登录，则跳转
+                            window.location.href = "login.html?returnUrl=" + app.shopServerUrl;
+                        } else {
+                            window.location.href = app.shopServerUrl;
+                        }
+                    },
 					renderAddressList() {
 						var userInfo = this.userInfo;
 						// 请求后端获得最新数据
