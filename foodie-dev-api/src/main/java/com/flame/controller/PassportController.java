@@ -1,6 +1,7 @@
 package com.flame.controller;
 
 import com.flame.pojo.Users;
+import com.flame.pojo.UsersVO;
 import com.flame.pojo.bo.ShopcartBO;
 import com.flame.pojo.bo.UserBO;
 import com.flame.service.UserService;
@@ -12,6 +13,7 @@ import com.flame.utils.RedisOperator;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,13 +21,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import static com.flame.controller.BaseController.FOODIE_SHOPCART;
 
 @Api(value = "注册登录", tags = {"用于注册登录的相关接口"})
 @RestController
 @RequestMapping("passport")
-public class PassportController {
+public class PassportController extends BaseController {
 
     @Autowired
     private UserService userService;
@@ -87,12 +90,14 @@ public class PassportController {
         // 4. 实现注册
         Users userResult = userService.createUser(userBO);
 
-        userResult = setNullProperty(userResult);
+//        userResult = setNullProperty(userResult);
+
+        // 实现用户的redis会话
+        UsersVO usersVO = conventUsersVO(userResult);
 
         CookieUtils.setCookie(request, response, "user",
-                JsonUtils.objectToJson(userResult), true);
+                JsonUtils.objectToJson(usersVO), true);
 
-        // TODO 生成用户token，存入redis会话
         // 同步购物车数据
         synchShopcartData(userResult.getId(), request, response);
 
@@ -116,19 +121,21 @@ public class PassportController {
 
         // 1. 实现登录
         Users userResult = userService.queryUserForLogin(username,
-                    MD5Utils.getMD5Str(password));
+                MD5Utils.getMD5Str(password));
 
-        if (userResult == null) {
+        if (userResult==null) {
             return FlameJSONResult.errorMsg("用户名或密码不正确");
         }
 
+      //  userResult = setNullProperty(userResult);
         userResult = setNullProperty(userResult);
 
+        // 实现用户的redis会话
+        UsersVO usersVO = conventUsersVO(userResult);
+
         CookieUtils.setCookie(request, response, "user",
-                JsonUtils.objectToJson(userResult), true);
+                JsonUtils.objectToJson(usersVO), true);
 
-
-        // TODO 生成用户token，存入redis会话
         // 同步购物车数据
         synchShopcartData(userResult.getId(), request, response);
 
@@ -224,6 +231,17 @@ public class PassportController {
     }
 
 
+    private UsersVO conventUsersVO(Users userResult){
+        // 实现用户的redis会话
+        String uniqueToken = UUID.randomUUID().toString().trim();
+        redisOperator.set(REDIS_USER_TOKEN + ":" + userResult.getId(), uniqueToken);
+
+        UsersVO usersVO = new UsersVO();
+        BeanUtils.copyProperties(userResult, usersVO);
+        usersVO.setUserUniqueToken(uniqueToken);
+        return usersVO;
+    }
+
     @ApiOperation(value = "用户退出登录", notes = "用户退出登录", httpMethod = "POST")
     @PostMapping("/logout")
     public FlameJSONResult logout(@RequestParam String userId,
@@ -233,7 +251,8 @@ public class PassportController {
         // 清除用户的相关信息的cookie
         CookieUtils.deleteCookie(request, response, "user");
 
-        // TODO 用户退出登录，需要清空购物车
+        // 用户退出登录，需要清空购物车
+        redisOperator.del(REDIS_USER_TOKEN + ":" + userId);
         // 分布式会话中需要清除用户数据
         CookieUtils.deleteCookie(request, response, FOODIE_SHOPCART);
         return FlameJSONResult.ok();
