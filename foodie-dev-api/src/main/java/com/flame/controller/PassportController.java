@@ -230,18 +230,6 @@ public class PassportController extends BaseController {
         return userResult;
     }
 
-
-    private UsersVO conventUsersVO(Users userResult){
-        // 实现用户的redis会话
-        String uniqueToken = UUID.randomUUID().toString().trim();
-        redisOperator.set(REDIS_USER_TOKEN + ":" + userResult.getId(), uniqueToken);
-
-        UsersVO usersVO = new UsersVO();
-        BeanUtils.copyProperties(userResult, usersVO);
-        usersVO.setUserUniqueToken(uniqueToken);
-        return usersVO;
-    }
-
     @ApiOperation(value = "用户退出登录", notes = "用户退出登录", httpMethod = "POST")
     @PostMapping("/logout")
     public FlameJSONResult logout(@RequestParam String userId,

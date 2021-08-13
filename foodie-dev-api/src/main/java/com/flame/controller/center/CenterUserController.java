@@ -2,6 +2,7 @@ package com.flame.controller.center;
 
 import com.flame.controller.BaseController;
 import com.flame.pojo.Users;
+import com.flame.pojo.UsersVO;
 import com.flame.pojo.bo.center.CenterUserBO;
 import com.flame.resource.FileUpload;
 import com.flame.service.center.CenterUserService;
@@ -127,11 +128,12 @@ public class CenterUserController extends BaseController {
         // 更新用户头像到数据库
         Users userResult = centerUserService.updateUserFace(userId, finalUserFaceUrl);
 
-        userResult = setNullProperty(userResult);
-        CookieUtils.setCookie(request, response, "user",
-                JsonUtils.objectToJson(userResult), true);
+        // 后续要改，增加令牌token，会整合进redis，分布式会话
+        UsersVO usersVO = conventUsersVO(userResult);
 
-        // TODO 后续要改，增加令牌token，会整合进redis，分布式会话
+        // userResult = setNullProperty(userResult);
+        CookieUtils.setCookie(request, response, "user",
+                JsonUtils.objectToJson(usersVO), true);
 
         return FlameJSONResult.ok();
     }
@@ -157,11 +159,12 @@ public class CenterUserController extends BaseController {
 
         Users userResult = centerUserService.updateUserInfo(userId, centerUserBO);
 
-        userResult = setNullProperty(userResult);
-        CookieUtils.setCookie(request, response, "user",
-                JsonUtils.objectToJson(userResult), true);
+        // 后续要改，增加令牌token，会整合进redis，分布式会话
+        UsersVO usersVO = conventUsersVO(userResult);
 
-        // TODO 后续要改，增加令牌token，会整合进redis，分布式会话
+        // userResult = setNullProperty(userResult);
+        CookieUtils.setCookie(request, response, "user",
+                JsonUtils.objectToJson(usersVO), true);
 
         return FlameJSONResult.ok();
     }
