@@ -1,4 +1,4 @@
-package com.flame.config;
+package com.flame;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -229,8 +229,10 @@
 						// 请求后端获得最新数据
 						var serverUrl = app.serverUrl;
 						axios.defaults.withCredentials = true;
-						axios.post(
-								serverUrl + '/userInfo/uploadFace?userId=' + userInfo.id, 
+						// var fileServer = serverUrl + '/userInfo/uploadFace?userId=' + userInfo.id;
+						var fileServer = 'http://localhost:8066/fdfs/uploadFace?userId='+userInfo.id;
+                        axios.post(
+                                fileServer,
 								multiForm, 
 								{
 									headers: {
