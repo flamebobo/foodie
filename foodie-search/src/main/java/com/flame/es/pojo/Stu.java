@@ -8,7 +8,7 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 @Document(indexName = "stu", type = "_doc")
 public class Stu {
 
-    @Id
+//    @Id
     private Long stuId;
     @Field(index = true, store = true)
     private String name;

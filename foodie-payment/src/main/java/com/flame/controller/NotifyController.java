@@ -141,7 +141,7 @@ public class NotifyController {
 		}
 
 		boolean signVerified = AlipaySignature.rsaCheckV1(params,
-														aliPayResource.getAlipayPublicKey(),re
+														aliPayResource.getAlipayPublicKey(),
 														aliPayResource.getCharset(),
 														aliPayResource.getSignType()); //调用SDK验证签名
 

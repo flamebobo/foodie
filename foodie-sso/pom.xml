@@ -21,10 +21,10 @@
             <artifactId>foodie-dev-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-start-thymeleaf</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-start-thymeleaf</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 
 
