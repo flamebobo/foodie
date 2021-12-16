@@ -36,7 +36,7 @@ public class HdfsClient {
 
         configuration.set("dfs.replication", "2");
         // 用户
-        String user = "atguigu";
+        String user = "root";
 
         // 1 获取到了客户端对象
         fs = FileSystem.get(uri, configuration, user);
