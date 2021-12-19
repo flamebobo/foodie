@@ -15,6 +15,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author laihuibo
+ */
 @Api(value = "购物车接口controller", tags = {"购物车接口相关的api"})
 @RequestMapping("shopcart")
 @RestController
