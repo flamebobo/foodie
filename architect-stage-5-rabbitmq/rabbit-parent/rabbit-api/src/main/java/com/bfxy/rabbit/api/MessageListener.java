@@ -7,6 +7,10 @@ package com.bfxy.rabbit.api;
  */
 public interface MessageListener {
 
+	/**
+	 * 监听消息
+	 * @param message
+	 */
 	void onMessage(Message message);
 	
 }

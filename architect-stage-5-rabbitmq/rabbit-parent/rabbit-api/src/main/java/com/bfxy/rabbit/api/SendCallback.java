@@ -7,8 +7,14 @@ package com.bfxy.rabbit.api;
  */
 public interface SendCallback {
 
+	/**
+	 * 成功时回调方法
+	 */
 	void onSuccess();
-	
+
+	/**
+	 * 失败时回调方法
+	 */
 	void onFailure();
 	
 }

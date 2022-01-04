@@ -11,6 +11,9 @@ import org.springframework.context.annotation.Import;
 
 import com.bfxy.rabbit.task.autoconfigure.JobParserAutoConfigurartion;
 
+/**
+ * @author laihuibo
+ */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
