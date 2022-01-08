@@ -8,6 +8,9 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author laihuibo
+ */
 @RestController
 @Slf4j
 public class RedisLockController {
@@ -22,8 +25,6 @@ public class RedisLockController {
                 log.info("我进入了锁！！");
                 Thread.sleep(15000);
             }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -39,8 +40,6 @@ public class RedisLockController {
                 log.info("我进入了锁！！");
                 Thread.sleep(15000);
             }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }

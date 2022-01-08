@@ -6,6 +6,7 @@ import com.example.distributedemo.dao.ProductMapper;
 import com.example.distributedemo.model.Order;
 import com.example.distributedemo.model.OrderItem;
 import com.example.distributedemo.model.Product;
+import lombok.Synchronized;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,20 +35,35 @@ public class OrderService {
     private int purchaseProductId = 100100;
     //购买商品数量
     private int purchaseProductNum = 1;
+    /**
+     * spring平台事务管理器
+     */
     @Autowired
     private PlatformTransactionManager platformTransactionManager;
+    /**
+     * 事务定义
+     */
     @Autowired
     private TransactionDefinition transactionDefinition;
 
-    private Lock lock = new ReentrantLock();
+    // ReentrantLock 可重入锁
+    private final Lock lock = new ReentrantLock();
 
+    // object 也是单例
+    private final Object object = new Object();
 
 //    @Transactional(rollbackFor = Exception.class)
     public Integer createOrder() throws Exception{
         Product product = null;
-
+//        // 第一种写法：this指当前的实例，这里是OrderService 单例
+//        synchronized(this){...}
+//        // 第二种写法：这里的object也是单例
+//        synchronized (object){...}
+//        // 第三种写法：类锁，这里只有一个线程能抢到锁
+//        synchronized (OrderService.class){...}
         lock.lock();
         try {
+            // 手动事务控制
             TransactionStatus transaction1 = platformTransactionManager.getTransaction(transactionDefinition);
             product = productMapper.selectByPrimaryKey(purchaseProductId);
             if (product==null){
@@ -61,8 +77,7 @@ public class OrderService {
             //校验库存
             if (purchaseProductNum > currentCount){
                 platformTransactionManager.rollback(transaction1);
-                throw
-                        new Exception("商品"+purchaseProductId+"仅剩"+currentCount+"件，无法购买");
+                throw new Exception("商品"+purchaseProductId+"仅剩"+currentCount+"件，无法购买");
             }
 
             productMapper.updateProductCount(purchaseProductNum,"xxx",new Date(),product.getId());

@@ -189,6 +189,7 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
+  <!--  for update 锁定数据，其他线程只能等待-->
   <select id="selectDistributeLock" resultType="com.example.distributelock.model.DistributeLock">
     select * from distribute_lock
     where business_code = #{businessCode,jdbcType=VARCHAR}

@@ -22,6 +22,7 @@ public class DistributeDemoApplicationTests {
     public void concurrentOrder() throws InterruptedException {
         Thread.sleep(60000);
         CountDownLatch cdl = new CountDownLatch(5);
+        // 等线程同时达到
         CyclicBarrier cyclicBarrier = new CyclicBarrier(5);
 
         ExecutorService es = Executors.newFixedThreadPool(5);

@@ -13,6 +13,9 @@ import javax.annotation.Resource;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author laihuibo
+ */
 @RestController
 @Slf4j
 public class DemoController {
@@ -24,7 +27,9 @@ public class DemoController {
     public String singleLock() throws Exception {
         log.info("我进入了方法！");
         DistributeLock distributeLock = distributeLockMapper.selectDistributeLock("demo");
-        if (distributeLock==null) throw new Exception("分布式锁找不到");
+        if (distributeLock==null) {
+            throw new Exception("分布式锁找不到");
+        }
         log.info("我进入了锁！");
         try {
             Thread.sleep(20000);
