@@ -25,8 +25,6 @@ public class ZookeeperController {
                 log.info("我获得了锁");
                 Thread.sleep(10000);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -43,11 +41,9 @@ public class ZookeeperController {
                 log.info("我获得了锁！！");
                 Thread.sleep(10000);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 log.info("我释放了锁！！");
                 lock.release();

@@ -21,7 +21,7 @@ public class ZkLock implements AutoCloseable, Watcher {
 
     public boolean getLock(String businessCode) {
         try {
-            //创建业务 根节点
+            //创建业务 根节点  PERSISTENT持久类型
             Stat stat = zooKeeper.exists("/" + businessCode, false);
             if (stat==null){
                 zooKeeper.create("/" + businessCode,businessCode.getBytes(),
