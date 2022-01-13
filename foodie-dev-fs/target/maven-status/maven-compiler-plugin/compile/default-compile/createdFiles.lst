@@ -1,8 +1,0 @@
-com/flame/service/impl/FdfsServiceImpl.class
-META-INF/spring-configuration-metadata.json
-com/flame/resourse/FileResource.class
-com/flame/Application.class
-com/flame/controller/CenterUserController.class
-com/flame/CorsConfig.class
-com/flame/service/FdfsService.class
-com/flame/controller/BaseController.class
