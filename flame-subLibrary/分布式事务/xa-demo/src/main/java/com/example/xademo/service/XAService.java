@@ -17,6 +17,9 @@ public class XAService {
     @Resource
     private XA132Mapper xa132Mapper;
 
+    /**
+     * 指定事务管理器为 JTA事务管理器
+     */
     @Transactional(transactionManager = "xaTransaction")
     public void testXA() {
         XA131 xa131 = new XA131();

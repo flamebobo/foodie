@@ -19,9 +19,9 @@
                         http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
     <bean id="ds0" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
-        <property name="username" value="imooc" />
-        <property name="password" value="Imooc@123456" />
-        <property name="jdbcUrl" value="jdbc:mysql://192.168.73.131/sharding_order?serverTimezone=Asia/Shanghai&amp;useSSL=false"/>
+        <property name="username" value="root" />
+        <property name="password" value="123456" />
+        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1/sharding_order?serverTimezone=Asia/Shanghai&amp;useSSL=false"/>
     </bean>
     <bean id="slave0" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
