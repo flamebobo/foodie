@@ -1,0 +1,46 @@
+filebeat.inputs:
+- type: log
+  paths:
+    - /root/java/logs/app-collectr.log
+  document_type: "app-log"
+  multiline:
+    #pattern: 指定匹配的表达式
+    pattern: '^\[' #指定匹配的表达式（匹配以"[开头的字符串）
+    negate: true    #是否匹配到
+    match: after    #合并到上一行的末尾
+    max_lines: 2000    #最大的行数
+    timeout: 2s        #如果在规定时间没有新的日志事件就不等待后面的日志
+  fields:
+    logbiz: collector
+    logtopic: app-log-collector  ##按服务划分用作kafka topic
+    evn: dev
+      
+- type: log
+   
+  paths:
+    - /root/java/logs/error-collector.log
+    #定义写入es时的_type 值
+  document_type: "app-log"
+  multiline:
+      #pattern: 指定匹配的表达式
+    pattern: '^\[' #指定匹配的表达式（匹配以"[开头的字符串）
+    negate: true    #是否匹配到
+    match: after    #合并到上一行的末尾
+    max_lines: 2000    #最大的行数
+    timeout: 2s        #如果在规定时间没有新的日志事件就不等待后面的日志
+  fields:
+    logbiz: collector
+    logtopic: error-log-collector  ##按服务划分用作kafka topic
+    evn: dev
+      
+output.kafka:
+  enabled: true
+  hosts: ["1.117.205.8:9092"]
+  topic: '%{[fields.logtopic]}'
+  partition.hash:
+    reachable_only: true
+  compression: gzip
+  max_message_bytes: 1000000
+  required_acks: 1
+loggin.to_files: true
+

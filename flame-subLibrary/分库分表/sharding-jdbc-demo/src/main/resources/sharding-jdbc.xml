@@ -20,14 +20,14 @@
     <bean id="ds0" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
         <property name="username" value="root" />
-        <property name="password" value="123456" />
-        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1/sharding_order?serverTimezone=Asia/Shanghai&amp;useSSL=false"/>
+        <property name="password" value="12345678" />
+        <property name="jdbcUrl" value="jdbc:mysql://localhost/sharding_order?serverTimezone=Asia/Shanghai&amp;useSSL=false"/>
     </bean>
     <bean id="slave0" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
-        <property name="username" value="imooc" />
-        <property name="password" value="Imooc@123456" />
-        <property name="jdbcUrl" value="jdbc:mysql://192.168.73.130/sharding_order?serverTimezone=Asia/Shanghai&amp;useSSL=false"/>
+        <property name="username" value="root" />
+        <property name="password" value="123456" />
+        <property name="jdbcUrl" value="jdbc:mysql://localhost/sharding_order?serverTimezone=Asia/Shanghai&amp;useSSL=false"/>
     </bean>
     <bean id="ms1" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />

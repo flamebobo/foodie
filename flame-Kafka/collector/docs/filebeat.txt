@@ -32,7 +32,13 @@ kafka-topics.sh --zookeeper 192.168.11.111:2181 --list
 kafka-topics.sh --zookeeper 192.168.11.111:2181 --create --topic app-log-collector --partitions 1  --replication-factor 1
 kafka-topics.sh --zookeeper 192.168.11.111:2181 --create --topic error-log-collector --partitions 1  --replication-factor 1  
 
+Kafka 创建topic
 
+./kafka-topics.sh --bootstrap-server 172.16.253.107:9092 --create --topic app-log-cpllect --partitions 1 --replication-factor 1
+
+查看Kafka topic
+
+./kafka-topics.sh --bootstrap-server 172.16.253.107:9092 --list
 
 
 
