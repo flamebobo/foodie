@@ -17,6 +17,10 @@ public class AccountService {
     @Resource
     private AccountBMapper accountBMapper;
 
+    /**
+     * 不能同时配置两个事务管理器，另外一个保证不了，只能提供事务补偿机制
+     * rollbackFor 默认是runtimeExcetion,这里定义成Exception
+     */
     @Transactional(transactionManager = "tm131",rollbackFor = Exception.class)
     public void transferAccount(){
         AccountA accountA = accountAMapper.selectByPrimaryKey(1);
@@ -30,7 +34,7 @@ public class AccountService {
         try{
             int i = 1/0;
         }catch (Exception e){
-
+        // 这里的异常最好是自定义的异常
             try{
                 AccountB accountb = accountBMapper.selectByPrimaryKey(2);
                 accountb.setBalance(accountb.getBalance().subtract(new BigDecimal(200)));

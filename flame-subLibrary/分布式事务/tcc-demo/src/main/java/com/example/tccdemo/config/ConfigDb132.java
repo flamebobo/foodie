@@ -18,16 +18,26 @@ import java.io.IOException;
 @MapperScan(value = "com.example.tccdemo.db132.dao",sqlSessionFactoryRef = "factoryBean132")
 public class ConfigDb132 {
 
+    /**
+     * 配置数据源
+     * @return
+     */
     @Bean("db132")
     public DataSource db132() {
         MysqlDataSource dataSource = new MysqlDataSource();
-        dataSource.setUser("imooc");
-        dataSource.setPassword("Imooc@123456");
-        dataSource.setUrl("jdbc:mysql://192.168.73.132:3306/xa_132");
+        dataSource.setUser("root");
+        dataSource.setPassword("123456");
+        dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/xa_132");
 
         return dataSource;
     }
 
+    /**
+     * 配置mybatis数据源
+     * @param dataSource
+     * @return
+     * @throws IOException
+     */
     @Bean("factoryBean132")
     public SqlSessionFactoryBean factoryBean(@Qualifier("db132") DataSource dataSource) throws IOException {
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
@@ -39,6 +49,11 @@ public class ConfigDb132 {
         return factoryBean;
     }
 
+    /**
+     * 配置事务管理器 PlatformTransactionManager
+     * @param dataSource
+     * @return
+     */
     @Bean("tm132")
     public PlatformTransactionManager transactionManager(@Qualifier("db132") DataSource dataSource) {
 

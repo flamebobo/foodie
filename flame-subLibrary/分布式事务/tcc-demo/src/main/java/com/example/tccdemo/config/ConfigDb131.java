@@ -19,16 +19,26 @@ import java.io.IOException;
 @MapperScan(value = "com.example.tccdemo.db131.dao",sqlSessionFactoryRef = "factoryBean131")
 public class ConfigDb131 {
 
+    /**
+     * 配置数据源
+     * @return
+     */
     @Bean("db131")
     public DataSource db131() {
         MysqlDataSource dataSource = new MysqlDataSource();
-        dataSource.setUser("imooc");
-        dataSource.setPassword("Imooc@123456");
-        dataSource.setUrl("jdbc:mysql://192.168.73.131:3306/xa_131");
+        dataSource.setUser("root");
+        dataSource.setPassword("12345678");
+        dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/xa_131");
 
         return dataSource;
     }
 
+    /**
+     * 配置mybatis数据源
+     * @param dataSource
+     * @return
+     * @throws IOException
+     */
     @Bean("factoryBean131")
     public SqlSessionFactoryBean factoryBean(@Qualifier("db131") DataSource dataSource) throws IOException {
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
@@ -40,6 +50,11 @@ public class ConfigDb131 {
         return factoryBean;
     }
 
+    /**
+     * 配置事务管理器 PlatformTransactionManager
+     * @param dataSource
+     * @return
+     */
     @Bean("tm131")
     public PlatformTransactionManager transactionManager(@Qualifier("db131") DataSource dataSource) {
 
