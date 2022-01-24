@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/flame-Kafka/collector/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-Kafka/kafka-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-Kafka/kafka-producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-Kafka/kafka-producer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-distribute-lock/distribute-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-distribute-lock/distribute-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-distribute-lock/distribute-lock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-distribute-lock/distribute-zk-lock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-distribute-lock/redisson-lock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-dev-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-dev-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-dev-fs/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-dev-fs/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-dev-mapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-dev-mapper/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-dev-pojo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-dev-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-hadoop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-search/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-sso/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-foodie/foodie-sso/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-rabbitmq/es-job/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-core-producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-task/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-rabbitmq/rabbitmq-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-subLibrary/分布式事务/tcc-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-subLibrary/分布式事务/xa-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-subLibrary/分布式事务/xa-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-subLibrary/分布式限流/rate-limiter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-subLibrary/分布式限流/rate-limiter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-subLibrary/分库分表/mycat-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flame-subLibrary/分库分表/sharding-jdbc-demo/src/main/java" charset="UTF-8" />
+  </component>
+</project>

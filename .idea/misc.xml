@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/flame-foodie/foodie-dev-api" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/flame-Kafka/collector/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-Kafka/kafka-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-Kafka/kafka-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-foodie/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-rabbitmq/es-job/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-rabbitmq/rabbit-test/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-rabbitmq/rabbitmq-api/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-rabbitmq/rabbit-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-rabbitmq/rabbit-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-subLibrary/分库分表/mycat-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-subLibrary/分库分表/sharding-jdbc-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-subLibrary/分布式事务/xa-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-subLibrary/分布式事务/tcc-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-subLibrary/分布式限流/rate-limiter/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-subLibrary/分布式限流/ratelimiter-test/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-subLibrary/分布式限流/ratelimiter-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-distribute-lock/redisson-lock/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-distribute-lock/distribute-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-distribute-lock/distribute-lock/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-distribute-lock/distribute-zk-lock/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-spring-cloud/flame-spring-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-spring-cloud/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

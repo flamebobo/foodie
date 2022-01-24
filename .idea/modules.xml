@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/gateway/auth-service/auth-service.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/gateway/auth-service/auth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/gateway/auth-service-api/auth-service-api.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/gateway/auth-service-api/auth-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-Kafka/collector/collector.iml" filepath="$PROJECT_DIR$/flame-Kafka/collector/collector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/bus/config-bus-client/config-bus-client.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/bus/config-bus-client/config-bus-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/bus/config-bus-server/config-bus-server.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/bus/config-bus-server/config-bus-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/config/config-client/config-client.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/config/config-client/config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/config/config-server/config-server.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/config/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/config/config-server-eureka/config-server-eureka.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/config/config-server-eureka/config-server-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-distribute-lock/distribute-demo/distribute-demo.iml" filepath="$PROJECT_DIR$/flame-distribute-lock/distribute-demo/distribute-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-distribute-lock/distribute-lock/distribute-lock.iml" filepath="$PROJECT_DIR$/flame-distribute-lock/distribute-lock/distribute-lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-distribute-lock/distribute-zk-lock/distribute-zk-lock.iml" filepath="$PROJECT_DIR$/flame-distribute-lock/distribute-zk-lock/distribute-zk-lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/dubbo/dubbo-api/dubbo-api.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/dubbo/dubbo-api/dubbo-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/dubbo/dubbo-client/dubbo-client.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/dubbo/dubbo-client/dubbo-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/dubbo/dubbo-consumer/dubbo-consumer.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/dubbo/dubbo-consumer/dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-rabbitmq/es-job/es-job.iml" filepath="$PROJECT_DIR$/flame-rabbitmq/es-job/es-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/eureka/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/eureka/eureka-client/eureka-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/eureka/eureka-consumer/eureka-consumer.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/eureka/eureka-consumer/eureka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/eureka/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/eureka/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/eureka/eureka-server-peer/eureka-server-peer.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/eureka/eureka-server-peer/eureka-server-peer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/eureka/eureka-server-peer2/eureka-server-peer2.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/eureka/eureka-server-peer2/eureka-server-peer2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/feign/feign-client/feign-client.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/feign/feign-client/feign-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/feign/feign-client-intf/feign-client-intf.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/feign/feign-client-intf/feign-client-intf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/feign/feign-consumer/feign-consumer.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/feign/feign-consumer/feign-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/feign/feign-consumer-advanced/feign-consumer-advanced.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/feign/feign-consumer-advanced/feign-consumer-advanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/flame.iml" filepath="$PROJECT_DIR$/.idea/flame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/flame-spring-cloud.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/flame-spring-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-dev.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-dev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-dev-api/foodie-dev-api.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-dev-api/foodie-dev-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-dev-common/foodie-dev-common.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-dev-common/foodie-dev-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-dev-fs/foodie-dev-fs.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-dev-fs/foodie-dev-fs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-dev-mapper/foodie-dev-mapper.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-dev-mapper/foodie-dev-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-dev-pojo/foodie-dev-pojo.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-dev-pojo/foodie-dev-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-search/foodie-dev-search.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-search/foodie-dev-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-dev-service/foodie-dev-service.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-dev-service/foodie-dev-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-hadoop/foodie-hadoop.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-hadoop/foodie-hadoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-sso/foodie-sso.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-sso/foodie-sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/gateway/gateway-sample/gateway-sample.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/gateway/gateway-sample/gateway-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-dashboard/hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-fallback/hystrix-fallback.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-fallback/hystrix-fallback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-turbine/hystrix-turbine.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-turbine/hystrix-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-Kafka/kafka-consumer/kafka-consumer.iml" filepath="$PROJECT_DIR$/flame-Kafka/kafka-consumer/kafka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-Kafka/kafka-producer/kafka-producer.iml" filepath="$PROJECT_DIR$/flame-Kafka/kafka-producer/kafka-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分库分表/mycat-demo/mycat-demo.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分库分表/mycat-demo/mycat-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-api/rabbit-api.iml" filepath="$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-api/rabbit-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-common/rabbit-common.iml" filepath="$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-common/rabbit-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-consumer/rabbit-consumer.iml" filepath="$PROJECT_DIR$/flame-rabbitmq/rabbit-consumer/rabbit-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-core-producer/rabbit-core-producer.iml" filepath="$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-core-producer/rabbit-core-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-parent.iml" filepath="$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-producer/rabbit-producer.iml" filepath="$PROJECT_DIR$/flame-rabbitmq/rabbit-producer/rabbit-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-task/rabbit-task.iml" filepath="$PROJECT_DIR$/flame-rabbitmq/rabbit-parent/rabbit-task/rabbit-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-rabbitmq/rabbit-test/rabbit-test.iml" filepath="$PROJECT_DIR$/flame-rabbitmq/rabbit-test/rabbit-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-rabbitmq/rabbitmq-api/rabbitmq-api.iml" filepath="$PROJECT_DIR$/flame-rabbitmq/rabbitmq-api/rabbitmq-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分布式限流/rate-limiter/rate-limiter.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分布式限流/rate-limiter/rate-limiter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/ratelimiter/rate-limiter/rate-limiter (1) (com.imooc).iml" filepath="$PROJECT_DIR$/flame-spring-cloud/ratelimiter/rate-limiter/rate-limiter (1) (com.imooc).iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分布式限流/ratelimiter-annotation/ratelimiter-annotation.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分布式限流/ratelimiter-annotation/ratelimiter-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/ratelimiter/ratelimiter-annotation/ratelimiter-annotation (1).iml" filepath="$PROJECT_DIR$/flame-spring-cloud/ratelimiter/ratelimiter-annotation/ratelimiter-annotation (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分布式限流/ratelimiter-test/ratelimiter-test.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分布式限流/ratelimiter-test/ratelimiter-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/ratelimiter/ratelimiter-test/ratelimiter-test (1).iml" filepath="$PROJECT_DIR$/flame-spring-cloud/ratelimiter/ratelimiter-test/ratelimiter-test (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-distribute-lock/redisson-lock/redisson-lock.iml" filepath="$PROJECT_DIR$/flame-distribute-lock/redisson-lock/redisson-lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/ribbon/ribbon-consumer/ribbon-consumer.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/ribbon/ribbon-consumer/ribbon-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分库分表/sharding-jdbc-demo/sharding-jdbc-demo.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分库分表/sharding-jdbc-demo/sharding-jdbc-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/sleuth/sleuth-traceA/sleuth-traceA.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/sleuth/sleuth-traceA/sleuth-traceA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/sleuth/sleuth-traceB/sleuth-traceB.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/sleuth/sleuth-traceB/sleuth-traceB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/stream/stream-sample/stream-sample.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/stream/stream-sample/stream-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分布式事务/tcc-demo/tcc-demo.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分布式事务/tcc-demo/tcc-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分布式事务/xa-demo/xa-demo.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分布式事务/xa-demo/xa-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/sleuth/zipkin-server/zipkin-server.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/sleuth/zipkin-server/zipkin-server.iml" />
+    </modules>
+  </component>
+</project>
