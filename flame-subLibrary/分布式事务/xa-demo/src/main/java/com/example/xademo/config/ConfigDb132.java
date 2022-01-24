@@ -20,9 +20,9 @@ public class ConfigDb132 {
     @Bean("db132")
     public DataSource db132(){
         MysqlXADataSource xaDataSource = new MysqlXADataSource();
-        xaDataSource.setUser("imooc");
-        xaDataSource.setPassword("Imooc@123456");
-        xaDataSource.setUrl("jdbc:mysql://192.168.73.132:3306/xa_132");
+        xaDataSource.setUser("root");
+        xaDataSource.setPassword("123456");
+        xaDataSource.setUrl("jdbc:mysql://127.0.0.1:3306/xa_132");
 
         AtomikosDataSourceBean atomikosDataSourceBean = new AtomikosDataSourceBean();
         atomikosDataSourceBean.setXaDataSource(xaDataSource);

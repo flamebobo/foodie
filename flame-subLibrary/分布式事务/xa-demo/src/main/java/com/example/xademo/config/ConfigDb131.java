@@ -22,13 +22,19 @@ import java.io.IOException;
 @MapperScan(value = "com.example.xademo.db131.dao",sqlSessionFactoryRef = "sqlSessionFactoryBean131")
 public class ConfigDb131 {
 
+    /**
+     * 设置数据源
+     * @return
+     */
     @Bean("db131")
     public DataSource db131(){
+        // MysqlXADataSource 数据源
         MysqlXADataSource xaDataSource = new MysqlXADataSource();
-        xaDataSource.setUser("imooc");
-        xaDataSource.setPassword("Imooc@123456");
-        xaDataSource.setUrl("jdbc:mysql://192.168.73.131:3306/xa_131");
+        xaDataSource.setUser("root");
+        xaDataSource.setPassword("123456");
+        xaDataSource.setUrl("jdbc:mysql://127.0.0.1:3306/xa_131");
 
+        // Atomikos数据源 资源管理器
         AtomikosDataSourceBean atomikosDataSourceBean = new AtomikosDataSourceBean();
         atomikosDataSourceBean.setXaDataSource(xaDataSource);
 
@@ -36,6 +42,12 @@ public class ConfigDb131 {
         return atomikosDataSourceBean;
     }
 
+    /**
+     * mybatis 配置
+     * @param dataSource
+     * @return
+     * @throws IOException
+     */
     @Bean("sqlSessionFactoryBean131")
     public SqlSessionFactoryBean sqlSessionFactoryBean(@Qualifier("db131") DataSource dataSource) throws IOException {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
@@ -45,6 +57,10 @@ public class ConfigDb131 {
         return sqlSessionFactoryBean;
     }
 
+    /**
+     * JTA事务管理器，只需要配置一个就好了，统一管理
+     * @return
+     */
     @Bean("xaTransaction")
     public JtaTransactionManager jtaTransactionManager(){
         UserTransaction userTransaction = new UserTransactionImp();
