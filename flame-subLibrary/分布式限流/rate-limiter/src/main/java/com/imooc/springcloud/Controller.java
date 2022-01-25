@@ -17,7 +17,9 @@ public class Controller {
 
     RateLimiter limiter = RateLimiter.create(2.0);
 
-    // 非阻塞限流
+    /**
+     * 非阻塞限流
+     */
     @GetMapping("/tryAcquire")
     public String tryAcquire(Integer count) {
         if (limiter.tryAcquire(count)) {
@@ -29,7 +31,9 @@ public class Controller {
         }
     }
 
-    // 限定时间的非阻塞限流
+    /**
+     * 限定时间的非阻塞限流
+     */
     @GetMapping("/tryAcquireWithTimeout")
     public String tryAcquireWithTimeout(Integer count, Integer timeout) {
         if (limiter.tryAcquire(count, timeout, TimeUnit.SECONDS)) {
@@ -41,7 +45,9 @@ public class Controller {
         }
     }
 
-    // 同步阻塞限流
+    /**
+     * 同步阻塞限流
+     */
     @GetMapping("/acquire")
     public String acquire(Integer count) {
         limiter.acquire(count);
