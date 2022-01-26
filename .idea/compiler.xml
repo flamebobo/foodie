@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,11 +10,15 @@
         <module name="sharding-jdbc-demo" />
         <module name="ratelimiter-test" />
         <module name="rabbitmq-api" />
+        <module name="registry-center" />
         <module name="kafka-consumer" />
         <module name="gateway-sample" />
         <module name="feign-consumer-advanced" />
+        <module name="foodie-cart-api" />
+        <module name="foodie-auth-service" />
         <module name="ratelimiter-annotation (1)" />
         <module name="eureka-server" />
+        <module name="foodie-auth-api" />
         <module name="foodie-dev-api" />
         <module name="foodie-dev-mapper" />
         <module name="tcc-demo" />
@@ -26,14 +31,23 @@
         <module name="config-bus-server" />
         <module name="distribute-zk-lock" />
         <module name="auth-service-api" />
+        <module name="foodie-user-service" />
         <module name="rate-limiter" />
+        <module name="foodie-user-pojo" />
         <module name="foodie-hadoop" />
         <module name="stream-sample" />
+        <module name="foodie-item-service" />
+        <module name="foodie-user-api" />
         <module name="mycat-demo" />
+        <module name="zipkin-server (1)" />
+        <module name="foodie-cloud-common" />
         <module name="ribbon-consumer" />
         <module name="config-bus-client" />
         <module name="eureka-client" />
         <module name="config-server-eureka" />
+        <module name="foodie-order-mapper" />
+        <module name="foodie-order-api" />
+        <module name="foodie-item-web" />
         <module name="foodie-dev-search" />
         <module name="foodie-dev-common" />
         <module name="eureka-consumer" />
@@ -41,24 +55,39 @@
         <module name="foodie-dev-pojo" />
         <module name="rabbit-test" />
         <module name="config-client" />
+        <module name="hystrix-dashboard (1)" />
+        <module name="foodie-order-service" />
+        <module name="foodie-cart-service" />
         <module name="collector" />
         <module name="feign-client" />
         <module name="hystrix-turbine" />
         <module name="auth-service" />
+        <module name="foodie-item-pojo" />
+        <module name="hystrix-turbine (1)" />
         <module name="rabbit-producer" />
+        <module name="foodie-order-pojo" />
         <module name="es-job" />
+        <module name="config-server (1)" />
+        <module name="foodie-user-mapper" />
         <module name="rabbit-common" />
         <module name="xa-demo" />
+        <module name="foodie-user-web" />
         <module name="ratelimiter-test (1)" />
         <module name="feign-client-intf" />
         <module name="distribute-lock" />
         <module name="rabbit-consumer" />
+        <module name="foodie-item-api" />
         <module name="ratelimiter-annotation" />
         <module name="kafka-producer" />
         <module name="foodie-dev-fs" />
+        <module name="foodie-cloud-shared-pojo" />
         <module name="foodie-sso" />
+        <module name="foodie-item-mapper" />
+        <module name="foodie-order-web" />
         <module name="config-server" />
+        <module name="foodie-cart-web" />
         <module name="hystrix-fallback" />
+        <module name="foodie-cloud-web-components" />
         <module name="foodie-dev-service" />
         <module name="rabbit-task" />
         <module name="rabbit-api" />
@@ -66,6 +95,7 @@
         <module name="feign-consumer" />
         <module name="rabbit-core-producer" />
         <module name="redisson-lock" />
+        <module name="gateway" />
         <module name="dubbo-consumer" />
         <module name="dubbo-api" />
         <module name="eureka-server-peer2" />
@@ -79,6 +109,7 @@
       <module name="config-bus-server" target="1.8" />
       <module name="config-client" target="1.8" />
       <module name="config-server" target="1.8" />
+      <module name="config-server (1)" target="1.8" />
       <module name="config-server-eureka" target="1.8" />
       <module name="distribute-demo" target="1.8" />
       <module name="distribute-lock" target="1.8" />
@@ -97,6 +128,15 @@
       <module name="feign-consumer" target="1.8" />
       <module name="feign-consumer-advanced" target="1.8" />
       <module name="flame-spring-cloud" target="1.8" />
+      <module name="foodie-auth-api" target="1.8" />
+      <module name="foodie-auth-service" target="1.8" />
+      <module name="foodie-cart-api" target="1.8" />
+      <module name="foodie-cart-service" target="1.8" />
+      <module name="foodie-cart-web" target="1.8" />
+      <module name="foodie-cloud" target="1.8" />
+      <module name="foodie-cloud-common" target="1.8" />
+      <module name="foodie-cloud-shared-pojo" target="1.8" />
+      <module name="foodie-cloud-web-components" target="1.8" />
       <module name="foodie-dev" target="1.8" />
       <module name="foodie-dev-api" target="1.8" />
       <module name="foodie-dev-common" target="1.8" />
@@ -106,11 +146,29 @@
       <module name="foodie-dev-search" target="1.8" />
       <module name="foodie-dev-service" target="1.8" />
       <module name="foodie-hadoop" target="1.8" />
+      <module name="foodie-item-api" target="1.8" />
+      <module name="foodie-item-mapper" target="1.8" />
+      <module name="foodie-item-pojo" target="1.8" />
+      <module name="foodie-item-service" target="1.8" />
+      <module name="foodie-item-web" target="1.8" />
+      <module name="foodie-order-api" target="1.8" />
+      <module name="foodie-order-mapper" target="1.8" />
+      <module name="foodie-order-pojo" target="1.8" />
+      <module name="foodie-order-service" target="1.8" />
+      <module name="foodie-order-web" target="1.8" />
       <module name="foodie-sso" target="11" />
+      <module name="foodie-user-api" target="1.8" />
+      <module name="foodie-user-mapper" target="1.8" />
+      <module name="foodie-user-pojo" target="1.8" />
+      <module name="foodie-user-service" target="1.8" />
+      <module name="foodie-user-web" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="gateway-sample" target="1.8" />
       <module name="hystrix-dashboard" target="1.8" />
+      <module name="hystrix-dashboard (1)" target="1.8" />
       <module name="hystrix-fallback" target="1.8" />
       <module name="hystrix-turbine" target="1.8" />
+      <module name="hystrix-turbine (1)" target="1.8" />
       <module name="kafka-consumer" target="1.8" />
       <module name="kafka-producer" target="1.8" />
       <module name="mycat-demo" target="1.8" />
@@ -130,6 +188,7 @@
       <module name="ratelimiter-test" target="1.8" />
       <module name="ratelimiter-test (1)" target="1.8" />
       <module name="redisson-lock" target="1.8" />
+      <module name="registry-center" target="1.8" />
       <module name="ribbon-consumer" target="1.8" />
       <module name="sharding-jdbc-demo" target="1.8" />
       <module name="sleuth-traceA" target="1.8" />
@@ -138,6 +197,7 @@
       <module name="tcc-demo" target="1.8" />
       <module name="xa-demo" target="1.8" />
       <module name="zipkin-server" target="1.8" />
+      <module name="zipkin-server (1)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

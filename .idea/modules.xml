@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/bus/config-bus-server/config-bus-server.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/bus/config-bus-server/config-bus-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/config/config-client/config-client.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/config/config-client/config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/config/config-server/config-server.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/config/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/platform/config-server/config-server (1).iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/platform/config-server/config-server (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/config/config-server-eureka/config-server-eureka.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/config/config-server-eureka/config-server-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-distribute-lock/distribute-demo/distribute-demo.iml" filepath="$PROJECT_DIR$/flame-distribute-lock/distribute-demo/distribute-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-distribute-lock/distribute-lock/distribute-lock.iml" filepath="$PROJECT_DIR$/flame-distribute-lock/distribute-lock/distribute-lock.iml" />
@@ -28,6 +29,15 @@
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/feign/feign-consumer-advanced/feign-consumer-advanced.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/feign/feign-consumer-advanced/feign-consumer-advanced.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/flame.iml" filepath="$PROJECT_DIR$/.idea/flame.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/flame-spring-cloud.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/flame-spring-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/auth/foodie-auth-api/foodie-auth-api.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/auth/foodie-auth-api/foodie-auth-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/auth/foodie-auth-service/foodie-auth-service.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/auth/foodie-auth-service/foodie-auth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/cart/foodie-cart-api/foodie-cart-api.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/cart/foodie-cart-api/foodie-cart-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/cart/foodie-cart-service/foodie-cart-service.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/cart/foodie-cart-service/foodie-cart-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/cart/foodie-cart-web/foodie-cart-web.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/cart/foodie-cart-web/foodie-cart-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/foodie-cloud.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/foodie-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/common/foodie-cloud-common/foodie-cloud-common.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/common/foodie-cloud-common/foodie-cloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/common/foodie-cloud-shared-pojo/foodie-cloud-shared-pojo.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/common/foodie-cloud-shared-pojo/foodie-cloud-shared-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/common/foodie-cloud-web-components/foodie-cloud-web-components.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/common/foodie-cloud-web-components/foodie-cloud-web-components.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-dev.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-dev.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-dev-api/foodie-dev-api.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-dev-api/foodie-dev-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-dev-common/foodie-dev-common.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-dev-common/foodie-dev-common.iml" />
@@ -37,11 +47,29 @@
       <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-search/foodie-dev-search.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-search/foodie-dev-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-dev-service/foodie-dev-service.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-dev-service/foodie-dev-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-hadoop/foodie-hadoop.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-hadoop/foodie-hadoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/item/foodie-item-api/foodie-item-api.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/item/foodie-item-api/foodie-item-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/item/foodie-item-mapper/foodie-item-mapper.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/item/foodie-item-mapper/foodie-item-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/item/foodie-item-pojo/foodie-item-pojo.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/item/foodie-item-pojo/foodie-item-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/item/foodie-item-service/foodie-item-service.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/item/foodie-item-service/foodie-item-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/item/foodie-item-web/foodie-item-web.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/item/foodie-item-web/foodie-item-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/order/foodie-order-api/foodie-order-api.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/order/foodie-order-api/foodie-order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/order/foodie-order-mapper/foodie-order-mapper.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/order/foodie-order-mapper/foodie-order-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/order/foodie-order-pojo/foodie-order-pojo.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/order/foodie-order-pojo/foodie-order-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/order/foodie-order-service/foodie-order-service.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/order/foodie-order-service/foodie-order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/order/foodie-order-web/foodie-order-web.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/order/foodie-order-web/foodie-order-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-foodie/foodie-sso/foodie-sso.iml" filepath="$PROJECT_DIR$/flame-foodie/foodie-sso/foodie-sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/user/foodie-user-api/foodie-user-api.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/user/foodie-user-api/foodie-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/user/foodie-user-mapper/foodie-user-mapper.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/user/foodie-user-mapper/foodie-user-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/user/foodie-user-pojo/foodie-user-pojo.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/user/foodie-user-pojo/foodie-user-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/user/foodie-user-service/foodie-user-service.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/user/foodie-user-service/foodie-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/domain/user/foodie-user-web/foodie-user-web.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/domain/user/foodie-user-web/foodie-user-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/platform/gateway/gateway.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/platform/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/gateway/gateway-sample/gateway-sample.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/gateway/gateway-sample/gateway-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-dashboard/hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/platform/hystrix-dashboard/hystrix-dashboard (1).iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/platform/hystrix-dashboard/hystrix-dashboard (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-fallback/hystrix-fallback.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-fallback/hystrix-fallback.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-turbine/hystrix-turbine.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/hystrix/hystrix-turbine/hystrix-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/platform/hystrix-turbine/hystrix-turbine (1).iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/platform/hystrix-turbine/hystrix-turbine (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-Kafka/kafka-consumer/kafka-consumer.iml" filepath="$PROJECT_DIR$/flame-Kafka/kafka-consumer/kafka-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-Kafka/kafka-producer/kafka-producer.iml" filepath="$PROJECT_DIR$/flame-Kafka/kafka-producer/kafka-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分库分表/mycat-demo/mycat-demo.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分库分表/mycat-demo/mycat-demo.iml" />
@@ -61,6 +89,7 @@
       <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分布式限流/ratelimiter-test/ratelimiter-test.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分布式限流/ratelimiter-test/ratelimiter-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/ratelimiter/ratelimiter-test/ratelimiter-test (1).iml" filepath="$PROJECT_DIR$/flame-spring-cloud/ratelimiter/ratelimiter-test/ratelimiter-test (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-distribute-lock/redisson-lock/redisson-lock.iml" filepath="$PROJECT_DIR$/flame-distribute-lock/redisson-lock/redisson-lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/platform/registry-center/registry-center.iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/platform/registry-center/registry-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/ribbon/ribbon-consumer/ribbon-consumer.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/ribbon/ribbon-consumer/ribbon-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分库分表/sharding-jdbc-demo/sharding-jdbc-demo.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分库分表/sharding-jdbc-demo/sharding-jdbc-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/sleuth/sleuth-traceA/sleuth-traceA.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/sleuth/sleuth-traceA/sleuth-traceA.iml" />
@@ -69,6 +98,7 @@
       <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分布式事务/tcc-demo/tcc-demo.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分布式事务/tcc-demo/tcc-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-subLibrary/分布式事务/xa-demo/xa-demo.iml" filepath="$PROJECT_DIR$/flame-subLibrary/分布式事务/xa-demo/xa-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/flame-spring-cloud/sleuth/zipkin-server/zipkin-server.iml" filepath="$PROJECT_DIR$/flame-spring-cloud/sleuth/zipkin-server/zipkin-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flame-foodie-cloud/platform/zipkin-server/zipkin-server (1).iml" filepath="$PROJECT_DIR$/flame-foodie-cloud/platform/zipkin-server/zipkin-server (1).iml" />
     </modules>
   </component>
 </project>

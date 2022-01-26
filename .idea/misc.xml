@@ -29,6 +29,7 @@
         <option value="$PROJECT_DIR$/flame-distribute-lock/distribute-zk-lock/pom.xml" />
         <option value="$PROJECT_DIR$/flame-spring-cloud/flame-spring-cloud/pom.xml" />
         <option value="$PROJECT_DIR$/flame-spring-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/flame-foodie-cloud/pom.xml" />
       </list>
     </option>
   </component>
