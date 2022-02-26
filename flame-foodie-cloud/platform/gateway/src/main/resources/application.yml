@@ -54,6 +54,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:20000/eureka/
+  instance:
+    instance-id: ${eureka.instance.ip-address}:${server.port}
+    ip-address: 172.19.46.183
+    prefer-ip-address: true
 
 ## 开启所有actuator-endpoint
 management:
